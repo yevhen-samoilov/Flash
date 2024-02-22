@@ -1,0 +1,108 @@
+name: flash
+description: "FLASH - AI Dating Messaging assistant"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.6
+  dio: ^5.4.1
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.1.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.3.13
+  get_it: ^7.6.7
+  intl: ^0.18.1
+  share_plus: ^7.2.2
+  shared_preferences: ^2.2.2
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: assets/images/icon.png
+  min_sdk_android: 21
+  web:
+    generate: true
+
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/logo_loading.png
+  color_dark: "#000000"
+  image_dark: assets/images/logo_loading.png
+  android: true
+  ios: true
+  web: true
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
+  fullscreen: false
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/.env
+    - assets/fonts/SFPro/
+
+
+  fonts:
+    - family: SF Pro Display
+      fonts:
+        - asset: assets/fonts/SFPro/SFProDisplay-Regular.ttf
+        - asset: assets/fonts/SFPro/SFProDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SFPro/SFProDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SFPro/SFProDisplay-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SFPro/SFProDisplay-Heavy.ttf
+          weight: 900
+        - asset: assets/fonts/SFPro/SFProDisplay-UltralightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-RegularItalic.ttf
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/SFPro/SFProDisplay-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-Black.ttf
+          weight: 900
+        - asset: assets/fonts/SFPro/SFProDisplay-SemiboldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-Ultralight.ttf
+          weight: 200
+        - asset: assets/fonts/SFPro/SFProDisplay-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/SFPro/SFProDisplay-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SFPro/SFProDisplay-HeavyItalic.ttf
+          weight: 900
+          style: italic
